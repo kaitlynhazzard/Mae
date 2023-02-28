@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,19 +14,20 @@
         {% else %}
             <title>Mae</title>
         {% endif %}
+
+        <link rel="shortcut icon" type="image/png" href="{% static 'imgs/MaeLogo.png' %}"/>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
     </head>
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">Mae</a>
-
-            </div>
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'imgs/MaeLogo.png' %}" width="50" height="50" alt="">
+                Mae
+            </a>
         </nav>
 
-        <div class="container">
-            {% block content %}{% endblock content %}
-        </div>
+        {% block content %}{% endblock content %}
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
