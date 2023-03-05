@@ -2,4 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request, 'website/home.html', context={"title": "Mae"})
+    return render(request, 'website/home.html', context={'home_active': 'active'})
+
+
+def about(request):
+    return render(request, 'website/about.html', context={'about_active' : 'active'})
+
