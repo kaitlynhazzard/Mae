@@ -8,3 +8,7 @@ def home(request):
 def about(request):
     return render(request, 'website/about.html', context={'about_active' : 'active'})
 
+
+def quote(request):
+    return render(request, 'website/quote.html', context={'pages_active' : 'active'})
+
