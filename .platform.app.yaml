@@ -1,9 +1,0 @@
-name: TestDeployment
-
-type: 'python:3.8'
-
-disk: 1024
-
-web:
-	commands:
-		start: gunicorn --pythonpath Mae Mae.wsgi
