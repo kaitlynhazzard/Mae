@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FBFBFB;
 }
 
 .layout_padding {
@@ -37,7 +37,7 @@ body {
   text-align: center;
   width: 145px;
   outline: none;
-  color: #f7f7f7;
+  color: #9D8171;
   border: 1px solid transparent;
 }
 
@@ -52,12 +52,12 @@ body {
 }
 
 .custom_orange-btn {
-  background-color: #fc5d35;
+  background-color: #F9EADF;
 }
 
 .custom_orange-btn:hover {
-  border: 1px solid #fc5d35;
-  color: #fc5d35;
+  border: 1px solid #F9EADF;
+  color: #F5E9E0;
   background-color: transparent;
 }
 
@@ -171,8 +171,8 @@ a:focus {
 .quote_btn-container a {
   display: inline-block;
   padding: 5px 15px;
-  background-color: #fc5d35;
-  color: #f7f7f7;
+  background-color: #F9EADF;
+  color: #9D8171;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -257,6 +257,7 @@ a:focus {
   background-position: center;
 }
 
+/* previous slide */
 .slider_section .custom_carousel-control .carousel-control-prev {
   background-image: url(../images/prev.png);
   background-color: #fc5d35;
@@ -283,7 +284,7 @@ a:focus {
 }
 
 .service_section .card .card-title {
-  color: #fc5d35;
+  color: #F9EADF;
 
 }
 
@@ -306,7 +307,7 @@ a:focus {
 }
 
 .service_section .card:hover::after {
-  background-color: #fc5d35;
+  background-color: #F9EADF;
 }
 
 /* end service section */
@@ -385,7 +386,7 @@ a:focus {
 
 .client_section .custom_carousel-control .carousel-control-prev:hover,
 .client_section .custom_carousel-control .carousel-control-next:hover {
-  background-color: #fc5d35;
+  background-color: #F9EADF;
 }
 
 .client_section .custom_carousel-control .carousel-control-prev {
@@ -422,7 +423,7 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: #fc5d35;
+  background-color: #F5E9E0;
   color: #fff;
   padding: 8px 40px;
   text-transform: uppercase;
@@ -471,10 +472,10 @@ a:focus {
 }
 
 .info_section .form_container button {
-  background-color: #fc5d35;
+  background-color: #F9EADF;
   border: none;
   outline: none;
-  color: #fff;
+  color: #9D8171;
   padding: 5px 30px;
   margin-top: 15px;
   font-size: 15px;
