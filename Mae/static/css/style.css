@@ -14,8 +14,9 @@ body {
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 26px;
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: 500;
+  font-size: 23px;
   width: 95%;
   margin: 70px 0px 0px 0px;
   color: var(--dark_gray);
@@ -44,7 +45,7 @@ p {
 }
 
 .layout_padding-top {
-  padding-top: 75px;
+  padding-top: 40px;
 }
 
 .layout_padding-bottom {
@@ -60,6 +61,7 @@ p {
   outline: none;
   color: var(--white);
   border: 1px solid transparent;
+  border-radius: 32px;
 }
 
 .custom_dark-btn {
@@ -88,6 +90,20 @@ p {
 }
 
 .custom_heading-text {
+  text-align: center;
+}
+
+.about_heading {
+  font-family: 'BebasNeueRegular', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--dark_gray);
+}
+
+.about_heading-text {
+  font-size: 17px;
+  margin: 30px 0px;
   text-align: center;
 }
 
@@ -189,13 +205,24 @@ a:focus {
   background-size: 55px;
 }
 
+/* Login Button */
+
 .quote_btn-container a {
   display: inline-block;
   padding: 5px 15px;
-  background-color: var(--pink);
-  color: var(--white);
   font-size: 14px;
   text-transform: uppercase;
+  border-radius: 30px;
+  outline: none;
+  color: var(--white);
+  border: 1px solid transparent;
+  background-color: var(--pink);
+}
+
+.quote_btn-container:hover a {
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  background-color: transparent;
 }
 
 /*end header section*/
@@ -458,8 +485,8 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: #F5E9E0;
-  color: #fff;
+  background-color: var(--pink);
+  color: var(--white);
   padding: 8px 40px;
   text-transform: uppercase;
   font-size: 14px;
@@ -522,7 +549,7 @@ a:focus {
 /* footer section*/
 
 .footer_section {
-  background-color: #efeded;
+  background-color: var(--white);
   padding: 20px 0;
   font-family: "Roboto", sans-serif;
 }
