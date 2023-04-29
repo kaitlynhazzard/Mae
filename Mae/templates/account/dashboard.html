@@ -5,6 +5,17 @@
 {% block content %}
     <h1>Dashboard</h1>
     <p>
-        Welecome to your dashboard.
+        Hello <span style='color:red'>{{ user }}</span>, welecome to your dashboard.
     </p>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type='submit' value='Update'></p>
+    </form>
+
+    {% comment %} {% for field,entry in fields.items %}
+        <p>{{ field }}: {{ entry }}</p>
+    {% endfor %} {% endcomment %}
+    
 {% endblock content %}

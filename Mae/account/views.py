@@ -1,13 +1,31 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.forms.models import model_to_dict
 
-from .forms import UserRegistrationForm
+from .forms import UserRegistrationForm, ClientInformationForm
+
+from .models import ClientInformation
 
 # Create your views here.
 
 @login_required
 def dashboard(request):
-    return render(request, 'account/dashboard.html')
+    client_info, found = ClientInformation.objects.get_or_create(user=request.user)
+    if request.method == 'POST':
+        form = ClientInformationForm(request.POST, instance=client_info)
+        form.save()
+    else:
+        form = ClientInformationForm(initial=client_info.__dict__)
+    
+    return render(request, 'account/dashboard.html', {'user': request.user.username, 'form': form})
+
+
+# def login(request):
+#     if request.method == 'POST':
+#         pass
+#     else:
+#         pass
+#     return render(request, 'account/login.html')
 
 
 def register(request):
