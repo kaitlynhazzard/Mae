@@ -1,10 +1,22 @@
 :root {
   --pink: #DC0155;
+  --lighter_pink: #DF4C73;
   --navy: #183953;
-  --white: #F4F3F8;
-  --dark_gray: #333333;
+  --white_old: #F4F3F8;
+  --dark_gray_old: #333333;
   --medium_gray: #909090;
   --yellow: #F2C94C;
+  --medium_blue: #286FB4;
+
+  --dark_gray: #2E3032;
+  --light_brown: #B19E83;
+  --dark_brown: #887458;
+  --peach: #F2D6C7;
+  --medium_gray: #737373;
+  --light_gold: #D6C7B2;
+  --silver_background: #F3E3D8;
+  --white: #F9F7F5;
+
 }
 
 body {
@@ -14,17 +26,22 @@ body {
 }
 
 h2 {
-  font-family: 'BebasNeueRegular', sans-serif;
-  font-weight: 500;
-  font-size: 23px;
-  width: 95%;
-  margin: 70px 0px 0px 0px;
+  font-family: 'DM Serif Display';
+  font-weight: 300;
+  font-size: 26px;
+  margin: 20px 0px 0px 0px;
   color: var(--dark_gray);
 }
 
 p {
+  font-family: 'DM Sans';
   margin: 10px 0px 40px 0px;
-  color: var(--dark_gray)
+  font-size: 17px;
+  color: var(--medium_gray);
+}
+
+.center_text {
+  text-align: center;
 }
 
 .layout_padding {
@@ -32,7 +49,7 @@ p {
 }
 
 .layout_padding2 {
-  padding: 45px 0;
+  padding: 60px 0;
 }
 
 .layout_padding2-top {
@@ -59,7 +76,7 @@ p {
   text-align: center;
   width: 145px;
   outline: none;
-  color: var(--white);
+  color: var(--dark_brown);
   border: 1px solid transparent;
   border-radius: 32px;
 }
@@ -75,12 +92,12 @@ p {
 }
 
 .custom_pink-btn {
-  background-color: var(--pink);
+  background-color: var(--peach);
 }
 
 .custom_pink-btn:hover {
-  border: 1px solid var(--pink);
-  color: var(--pink);
+  border: 1px solid var(--peach);
+  color: var(--peach);
   background-color: transparent;
 }
 
@@ -93,15 +110,15 @@ p {
   text-align: center;
 }
 
-.about_heading {
+.about_heading h2 {
   font-family: 'BebasNeueRegular', sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   color: var(--dark_gray);
 }
 
-.about_heading-text {
+.about_heading p {
   font-size: 17px;
   margin: 30px 0px;
   text-align: center;
@@ -156,10 +173,10 @@ a:focus {
 
 .navbar-brand,
 .navbar-brand:hover {
-  text-transform: uppercase;
+  font-family: 'Poppins';
   font-weight: bold;
   font-size: 24px;
-  color: var(--pink);
+  color: var(--dark_gray);
 }
 
 .custom_nav-container .nav_search-btn {
@@ -186,8 +203,8 @@ a:focus {
 
 .navbar-brand span {
   font-size: 20px;
-  font-weight: 700;
-  color: var(--pink);
+  font-weight: 550;
+  color: var(--dark_gray);
   margin-top: 5px;
 }
 
@@ -214,14 +231,14 @@ a:focus {
   text-transform: uppercase;
   border-radius: 30px;
   outline: none;
-  color: var(--white);
+  color: var(--dark_brown);
   border: 1px solid transparent;
-  background-color: var(--pink);
+  background-color: var(--peach);
 }
 
 .quote_btn-container:hover a {
-  border: 1px solid var(--pink);
-  color: var(--pink);
+  border: 1px solid var(--peach);
+  color: var(--peach);
   background-color: transparent;
 }
 
@@ -261,26 +278,27 @@ a:focus {
 .slider_item-container .slider_item-detail {}
 
 .slider_item-detail h1 {
-  font-family: 'BebasNeueRegular', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  width: 95%;
-  margin: 40px 0px 25px 0px;
-  color: var(--navy);
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  color: var(--dark_gray);
 }
 
 .slider_item-detail h2 {
-  font-family: 'BebasNeueRegular', sans-serif;
+  font-family: 'DM Sans';
   font-weight: 300;
   font-size: 26px;
   width: 95%;
   margin: 45px 0px 0px 0px;
-  color: var(--dark_gray);
+  color: var(--medium_gray);
 }
 
 .slider_item-detail p {
-  margin: 10px 0;
-  color: var(--dark_gray)
+  font-family: 'DM Sans';
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--medium_gray);
 }
 
 .slider_call-btn {
@@ -318,21 +336,6 @@ a:focus {
   background-position: center;
 }
 
-/* previous slide */
-/*
-.slider_section .custom_carousel-control .carousel-control-prev {
-  background-image: url(../images/prev.png);
-  background-color: #fc5d35;
-}
-
-.slider_section .custom_carousel-control .carousel-control-next {
-  background-image: url(../images/next.png);
-  background-color: #000000;
-}
-*/
-/* end slider section */
-
-
 /* service section */
 .service_section .card .card-img-top {
   width: 50px;
@@ -346,7 +349,7 @@ a:focus {
 }
 
 .service_section .card .card-title {
-  color: var(--pink);
+  color: var(--peach);
 
 }
 
@@ -369,7 +372,7 @@ a:focus {
 }
 
 .service_section .card:hover::after {
-  background-color: var(--pink);
+  background-color: var(--peach);
 }
 
 /* end service section */
@@ -397,7 +400,7 @@ a:focus {
   font-size: 125px;
   text-align: center;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -422,41 +425,6 @@ a:focus {
 .client_container h3 {
   text-align: center;
   margin-bottom: 25px;
-}
-
-
-.client_section .custom_carousel-control {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 105px;
-  transform: translateX(-50%);
-}
-
-.client_section .custom_carousel-control .carousel-control-prev,
-.client_section .custom_carousel-control .carousel-control-next {
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 100%;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: center;
-  background-color: #292727;
-}
-
-.client_section .custom_carousel-control .carousel-control-prev:hover,
-.client_section .custom_carousel-control .carousel-control-next:hover {
-  background-color: #F9EADF;
-}
-
-.client_section .custom_carousel-control .carousel-control-prev {
-  background-image: url(../images/prev.png);
-}
-
-.client_section .custom_carousel-control .carousel-control-next {
-  background-image: url(../images/next.png);
 }
 
 /* end client section */
@@ -485,8 +453,8 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: var(--pink);
-  color: var(--white);
+  background-color: var(--peach);
+  color: var(--dark_brown);
   padding: 8px 40px;
   text-transform: uppercase;
   font-size: 14px;
