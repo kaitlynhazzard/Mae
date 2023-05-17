@@ -1,13 +1,4 @@
 :root {
-  --pink: #DC0155;
-  --lighter_pink: #DF4C73;
-  --navy: #183953;
-  --white_old: #F4F3F8;
-  --dark_gray_old: #333333;
-  --medium_gray: #909090;
-  --yellow: #F2C94C;
-  --medium_blue: #286FB4;
-
   --dark_gray: #2E3032;
   --light_brown: #B19E83;
   --dark_brown: #887458;
@@ -110,15 +101,14 @@ p {
   text-align: center;
 }
 
-.about_heading h2 {
+.about_heading {
   font-family: 'BebasNeueRegular', sans-serif;
   font-weight: 600;
   font-size: 50px;
-  text-align: center;
   color: var(--dark_gray);
 }
 
-.about_heading p {
+.about_heading-text {
   font-size: 17px;
   margin: 30px 0px;
   text-align: center;

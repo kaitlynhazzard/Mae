@@ -586,6 +586,12 @@ pre code {
   margin-left: auto;
 }
 
+/* added */
+.text-container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
