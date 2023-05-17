@@ -41,7 +41,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="/">
-            <img src="{% static 'images/MaeLogo.png' %}" alt="" /><span>
+            <!--<img src="{% static 'images/MaeLogo.png' %}" alt="" />--><span>
               Mae
             </span>
           </a>
@@ -57,9 +57,11 @@
                     <!-- <span class="sr-only">(current)</span> -->
                   <a class="nav-link" href="/dashboard">Dashboard</a>
                 </li>
+                <!--
                 <li class="nav-item">
                   <a class="nav-link" href="/about">About</a>
                 </li>
+                -->
                 <li class="nav-item">
                   <a class="nav-link" href="/for-clients">For Clients</a>
                 </li>
@@ -92,8 +94,10 @@
     <!-- end header section -->
 
     {% block content %}{% endblock content %}
+  
+  <!-- empty end block content -->
 
-
+  <!--
   <section class="info_section layout_padding">
     <div class="container">
       <div class="row">
@@ -228,16 +232,19 @@
       </div>
     </div>
   </section>
+  -->
 
 
 
   <!-- footer section -->
+  <!--
   <section class="container-fluid footer_section">
     <p>
       Copyright &copy;
       <a href="https://html.design/">Mae</a>
     </p>
   </section>
+  -->
   <!-- footer section -->
 
   <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
