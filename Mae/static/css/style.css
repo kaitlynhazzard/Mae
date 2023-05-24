@@ -102,7 +102,8 @@ p {
 }
 
 .about_heading {
-  font-family: 'BebasNeueRegular', sans-serif;
+  font-family: 'DM Serif Display';
+  /*font-family: 'BebasNeueRegular', sans-serif;*/
   font-weight: 600;
   font-size: 50px;
   color: var(--dark_gray);

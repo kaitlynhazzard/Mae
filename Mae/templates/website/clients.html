@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}For Clients{% endblock title %}
 
@@ -9,7 +10,7 @@
   <section class="service_section layout_padding2 ">
     <div class="container">
       <div class="text-center">
-        <h2 class="about_heading">If you're here, we're guessing you or
+        <h2>If you're here, we're guessing you or
           a loved one were injured<br> or maybe even killed in an accident.
         </h2>
         <p class="about_heading-text">
@@ -24,6 +25,9 @@
           We created Mae to make it as easy as possible to find a trusted legal 
           professional to<br> represent your interests.
         </p>
+
+        <img src="{% static 'images/down_arrow.png' %}" alt="" class="" width=70px height=100px/>
+
         <p class="about_heading-text">
           <strong>We're here to answer all your questions.</strong><br>
           Like what's a standard contingency agreement? Can I see an attorney's track record?<br> How does jurisdiction affect my case? I'm not even sure if I want to
