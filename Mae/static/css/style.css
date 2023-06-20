@@ -7,7 +7,6 @@
   --light_gold: #D6C7B2;
   --silver_background: #F3E3D8;
   --white: #F9F7F5;
-
 }
 
 body {
@@ -87,8 +86,8 @@ p {
 }
 
 .custom_pink-btn:hover {
-  border: 1px solid var(--peach);
-  color: var(--peach);
+  border: 1px solid var(--dark_brown);
+  color: var(--dark_brown);
   background-color: transparent;
 }
 
@@ -102,7 +101,8 @@ p {
 }
 
 .about_heading {
-  font-family: 'BebasNeueRegular', sans-serif;
+  font-family: 'DM Serif Display';
+  /*font-family: 'BebasNeueRegular', sans-serif;*/
   font-weight: 600;
   font-size: 50px;
   color: var(--dark_gray);
@@ -227,8 +227,8 @@ a:focus {
 }
 
 .quote_btn-container:hover a {
-  border: 1px solid var(--peach);
-  color: var(--peach);
+  border: 1px solid var(--dark_brown);
+  color: var(--dark_brown);
   background-color: transparent;
 }
 
@@ -422,7 +422,6 @@ a:focus {
 /* contact section */
 
 .contact_section {
-  background-image: url(../images/orange-dish.png);
   background-repeat: no-repeat;
   background-size: 215px;
   background-position: right center;
